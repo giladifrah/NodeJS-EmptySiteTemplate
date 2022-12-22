@@ -34,6 +34,10 @@ pipeline {
       steps {
         echo 'Salamat'
       }
+      stage('Pack') {
+      steps {
+        echo 'Walla'
+      }
     }
 
   }
