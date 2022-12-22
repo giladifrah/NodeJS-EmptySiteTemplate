@@ -14,8 +14,19 @@ pipeline {
     }
 
     stage('Test') {
-      steps {
-        sleep 5
+      parallel {
+        stage('Test') {
+          steps {
+            sleep 5
+          }
+        }
+
+        stage('test2') {
+          steps {
+            sleep 5
+          }
+        }
+
       }
     }
 
