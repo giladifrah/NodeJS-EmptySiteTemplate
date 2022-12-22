@@ -34,7 +34,7 @@ pipeline {
       steps {
         echo 'Salamat'
       }
-      stage('Pack') {
+      stage('Pack2') {
       steps {
         echo 'Walla'
       }
