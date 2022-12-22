@@ -33,12 +33,16 @@ pipeline {
     stage('Pack') {
       steps {
         echo 'Salamat'
-      }
-      stage('Pack2') {
-      steps {
-        echo 'Walla'
-      }
+      }      
     }
-
   }
 }
+
+    stage('Pack2') {
+      steps {
+        echo 'Walla'
+      }      
+    }
+  }
+}
+
