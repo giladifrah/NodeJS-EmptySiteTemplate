@@ -7,5 +7,23 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        echo 'Ahlan'
+      }
+    }
+
+    stage('Test') {
+      steps {
+        sleep 5
+      }
+    }
+
+    stage('Pack') {
+      steps {
+        echo 'Salamat'
+      }
+    }
+
   }
 }
